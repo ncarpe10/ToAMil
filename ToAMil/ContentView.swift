@@ -13,18 +13,17 @@ struct EnterPage: View {
     
     var body: some View {
         ZStack{
-            if clicked == false{
-                Color.green.ignoresSafeArea()
-            }else{
-                Color.white
-            }
+            Color.green.ignoresSafeArea()
             VStack{
                     Image("Money Emoji")
                     Text("Welcome to ToAMil")
-                        .font(.largeTitle)
+                        .font(.custom(
+                            "AmericanTypewriter",
+                            size: 35)
+                            .weight(.heavy))
                         .padding()
-                    Text("Swipe Up to begin")
-        
+                Text("Swipe Up to begin")
+                    
             }
         }
         .offset(x: 0, y:(abs(OffSet.height / 2) * -1.0))
@@ -50,26 +49,53 @@ struct EnterPage: View {
 
 struct MainPage: View {
     @State private var Age: String = ""
-    @State public var speed = 50.0
+    @State public var speed = 18.0
     @State private var isEditing = false
+    @State private var selection = "No"
+    let colors = ["No", "Yes"]
+    
     
     var core = Core()
     var body: some View{
         ZStack{
+            LinearGradient(gradient: Gradient(colors: [.green, .white]), startPoint: .top, endPoint: .bottom)
+            .ignoresSafeArea()
             VStack{
-                Text("Save $" + String(core.MonthlySavings(Age: Int(speed))) + " a month to have a Mil by retirement!")
-                    .font(.largeTitle)
-                    .padding(100)
-                Slider(value: $speed,
-                       in: 1...66,
-                       onEditingChanged: { editing in
-                           isEditing = editing
-                        }
-                   )
-                Text("Age = " + String(Int(speed)))
+                Spacer()
+                Image("MainImage")
+                    .resizable()
+                    .frame(width: 300.0, height: 360.0)
+               Spacer()
+                HStack{
+                   Text("Invest \n$" + String(core.MonthlySavings(Age: Int(speed))) + "\na month to have a Mil by retirement!")
+                        .font(.largeTitle)
+                }
                 
+                HStack{
+                    Text("Age = " + String(Int(speed)))
+                    Slider(value: $speed,
+                        in: 1...66,
+                        onEditingChanged: { editing in
+                            isEditing = editing
+                            }
+                            )
+                    .frame(width: 300, height: 50)
+                    
+                }
+                Spacer()
+                HStack{
+                    Text("Adjust for inflation: ")
+                    Picker("", selection: $selection) {
+                                    ForEach(colors, id: \.self) {
+                                        Text($0)
+                                    }
+                                }
+                                .pickerStyle(.menu)
+                }
+           
             }
-            }
+     
+                    }
     }
 }
 
@@ -80,6 +106,7 @@ struct Core{
     let RetirementAge: Double = 67.0
     
     
+    
     func MonthlySavings(Age: Int) -> Double{
         let YearsToRetirement = RetirementAge -  Double(Age)
         var result = (TargetAmount * (SPReturn / 12))
@@ -88,6 +115,11 @@ struct Core{
         result = round((TMP / RHS) * 100) / 100.0
         
         return result
+    }
+    func MonthlySavingWithInflation(Age: Int) -> Double{
+        
+        
+        return 0.0
     }
     
     
