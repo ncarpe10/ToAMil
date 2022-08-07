@@ -9,12 +9,16 @@ import SwiftUI
 
 @main
 struct ToAMilApp: App {
+    @State var clicked = false
     var body: some Scene {
         WindowGroup {
-                EnterPage()
+            if clicked == false{
+            EnterPage(clicked: $clicked)
+            }else{
+                MainPage()
             }
             
         }
     }
-
+}
 

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct EnterPage: View {
-    @State var clicked = false
+    @Binding var clicked: Bool
+    @State private var OffSet = CGSize.zero
+    
     var body: some View {
         ZStack{
             if clicked == false{
@@ -17,25 +19,29 @@ struct EnterPage: View {
                 Color.white
             }
             VStack{
-                if clicked == false {
                     Image("Money Emoji")
                     Text("Welcome to ToAMil")
                         .font(.largeTitle)
                         .padding()
-                    Button("CLICK TO ENTER") {
-                        if clicked == false {
-                            clicked.toggle()
+                    Text("Swipe Up to begin")
+        
+            }
+        }
+        .offset(x: 0, y: OffSet.height * 5)
+        .opacity(2 - Double(abs(OffSet.height / 50)))
+        .gesture(
+            DragGesture()
+                .onChanged { gesture in
+                    OffSet = gesture.translation
+                }
+                .onEnded { _ in
+                    if OffSet.height < 100{
+                        clicked = true
+                    }else{
+                        OffSet = .zero
                     }
                 }
-            
-        }else{
-            MainPage()
-            }
-            }
-           
-        }
-        
-                        }
+                )                       }
 }
 
 struct MainPage: View {
@@ -85,11 +91,3 @@ struct Core{
     }
     
 
-
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        EnterPage()
-    }
-}
