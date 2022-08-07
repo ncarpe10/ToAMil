@@ -27,15 +27,19 @@ struct EnterPage: View {
         
             }
         }
-        .offset(x: 0, y: OffSet.height * 5)
-        .opacity(2 - Double(abs(OffSet.height / 50)))
+        .offset(x: 0, y:(abs(OffSet.height / 2) * -1.0))
+        .opacity(2 - (Double(OffSet.height / 200) * -1.0))
         .gesture(
             DragGesture()
                 .onChanged { gesture in
-                    OffSet = gesture.translation
+                    if gesture.translation.height < 1{
+                        OffSet = gesture.translation
+                    }else{
+                        OffSet = .zero
+                    }
                 }
                 .onEnded { _ in
-                    if OffSet.height < 100{
+                    if OffSet.height < -250{
                         clicked = true
                     }else{
                         OffSet = .zero

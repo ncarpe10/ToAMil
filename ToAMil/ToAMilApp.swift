@@ -13,7 +13,7 @@ struct ToAMilApp: App {
     var body: some Scene {
         WindowGroup {
             if clicked == false{
-            EnterPage(clicked: $clicked)
+                EnterPage(clicked: $clicked)
             }else{
                 MainPage()
             }
@@ -21,4 +21,5 @@ struct ToAMilApp: App {
         }
     }
 }
+
 
