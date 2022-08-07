@@ -52,7 +52,7 @@ struct MainPage: View {
     @State public var speed = 18.0
     @State private var isEditing = false
     @State private var selection = "No"
-    let colors = ["No", "Yes"]
+    let Choices = ["No", "Yes"]
     
     
     var core = Core()
@@ -67,7 +67,7 @@ struct MainPage: View {
                     .frame(width: 300.0, height: 360.0)
                Spacer()
                 HStack{
-                   Text("Invest \n$" + String(core.MonthlySavings(Age: Int(speed))) + "\na month to have a Mil by retirement!")
+                   Text("Invest \n$" + String(core.FuncSwitcher(Inflation: selection, Age: Int(speed))) + "\na month to have a Mil by retirement!")
                         .font(.largeTitle)
                 }
                 
@@ -86,7 +86,7 @@ struct MainPage: View {
                 HStack{
                     Text("Adjust for inflation: ")
                     Picker("", selection: $selection) {
-                                    ForEach(colors, id: \.self) {
+                                    ForEach(Choices, id: \.self) {
                                         Text($0)
                                     }
                                 }
@@ -104,7 +104,7 @@ struct Core{
     let SPReturn: Double = 0.107
     let TargetAmount: Double = 1000000.0
     let RetirementAge: Double = 67.0
-    
+    let InflationRate: Double = 0.0327
     
     
     func MonthlySavings(Age: Int) -> Double{
@@ -116,14 +116,35 @@ struct Core{
         
         return result
     }
+    func MonthlySavings(Age: Int, NewAmount: Double) -> Double{
+        let YearsToRetirement = RetirementAge -  Double(Age)
+        var result = (NewAmount * (SPReturn / 12))
+        let TMP = result
+        let RHS = (pow((1.0 + (SPReturn / 12)),(YearsToRetirement * 12)) - 1)
+        result = round((TMP / RHS) * 100) / 100.0
+        
+        return result
+    }
+    
+    
+    
     func MonthlySavingWithInflation(Age: Int) -> Double{
-        
-        
-        return 0.0
+        return MonthlySavings(Age: Age, NewAmount: CompoundingInflation(Amount: 1000000.0, Time: Age))          //Hard coding 1,000,000 for now
     }
     
+    func CompoundingInflation(Amount: Double, Time: Int) -> Double{
+        return Amount * pow((1.0 + (InflationRate / 12.0) ),(12.0 * Double(Time)))
     
+    }
+    
+    func FuncSwitcher(Inflation: String, Age: Int) -> Double{
+        if Inflation == "No"{
+            return MonthlySavings(Age: Age)
+        }else{
+            return MonthlySavingWithInflation(Age: Age)
+        }
 
     }
     
 
+}
