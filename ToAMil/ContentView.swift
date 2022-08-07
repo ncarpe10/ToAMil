@@ -133,7 +133,8 @@ struct Core{
     }
     
     func CompoundingInflation(Amount: Double, Time: Int) -> Double{
-        return Amount * pow((1.0 + (InflationRate / 12.0) ),(12.0 * Double(Time)))
+        let YearsToRetirement = RetirementAge -  Double(Time)
+        return Amount * pow((1.0 + (InflationRate / 12)),(12.0 * YearsToRetirement))
     
     }
     
