@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01122AF2289EDDB400B4A16A /* ToAMilApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01122AF1289EDDB400B4A16A /* ToAMilApp.swift */; };
+		01122AF4289EDDB400B4A16A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01122AF3289EDDB400B4A16A /* ContentView.swift */; };
+		01122AF6289EDDB500B4A16A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01122AF5289EDDB500B4A16A /* Assets.xcassets */; };
+		01122AF9289EDDB500B4A16A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01122AF8289EDDB500B4A16A /* Preview Assets.xcassets */; };
+		01122B03289EDDB500B4A16A /* ToAMilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01122B02289EDDB500B4A16A /* ToAMilTests.swift */; };
+		01122B0D289EDDB500B4A16A /* ToAMilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01122B0C289EDDB500B4A16A /* ToAMilUITests.swift */; };
+		01122B0F289EDDB500B4A16A /* ToAMilUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01122B0E289EDDB500B4A16A /* ToAMilUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01122AFF289EDDB500B4A16A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01122AE6289EDDB400B4A16A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01122AED289EDDB400B4A16A;
+			remoteInfo = ToAMil;
+		};
+		01122B09289EDDB500B4A16A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01122AE6289EDDB400B4A16A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01122AED289EDDB400B4A16A;
+			remoteInfo = ToAMil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01122AEE289EDDB400B4A16A /* ToAMil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToAMil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01122AF1289EDDB400B4A16A /* ToAMilApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToAMilApp.swift; sourceTree = "<group>"; };
+		01122AF3289EDDB400B4A16A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		01122AF5289EDDB500B4A16A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01122AF8289EDDB500B4A16A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01122AFE289EDDB500B4A16A /* ToAMilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToAMilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01122B02289EDDB500B4A16A /* ToAMilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToAMilTests.swift; sourceTree = "<group>"; };
+		01122B08289EDDB500B4A16A /* ToAMilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToAMilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01122B0C289EDDB500B4A16A /* ToAMilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToAMilUITests.swift; sourceTree = "<group>"; };
+		01122B0E289EDDB500B4A16A /* ToAMilUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToAMilUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01122AEB289EDDB400B4A16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01122AFB289EDDB500B4A16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01122B05289EDDB500B4A16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01122AE5289EDDB400B4A16A = {
+			isa = PBXGroup;
+			children = (
+				01122AF0289EDDB400B4A16A /* ToAMil */,
+				01122B01289EDDB500B4A16A /* ToAMilTests */,
+				01122B0B289EDDB500B4A16A /* ToAMilUITests */,
+				01122AEF289EDDB400B4A16A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01122AEF289EDDB400B4A16A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01122AEE289EDDB400B4A16A /* ToAMil.app */,
+				01122AFE289EDDB500B4A16A /* ToAMilTests.xctest */,
+				01122B08289EDDB500B4A16A /* ToAMilUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01122AF0289EDDB400B4A16A /* ToAMil */ = {
+			isa = PBXGroup;
+			children = (
+				01122AF1289EDDB400B4A16A /* ToAMilApp.swift */,
+				01122AF3289EDDB400B4A16A /* ContentView.swift */,
+				01122AF5289EDDB500B4A16A /* Assets.xcassets */,
+				01122AF7289EDDB500B4A16A /* Preview Content */,
+			);
+			path = ToAMil;
+			sourceTree = "<group>";
+		};
+		01122AF7289EDDB500B4A16A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				01122AF8289EDDB500B4A16A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		01122B01289EDDB500B4A16A /* ToAMilTests */ = {
+			isa = PBXGroup;
+			children = (
+				01122B02289EDDB500B4A16A /* ToAMilTests.swift */,
+			);
+			path = ToAMilTests;
+			sourceTree = "<group>";
+		};
+		01122B0B289EDDB500B4A16A /* ToAMilUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01122B0C289EDDB500B4A16A /* ToAMilUITests.swift */,
+				01122B0E289EDDB500B4A16A /* ToAMilUITestsLaunchTests.swift */,
+			);
+			path = ToAMilUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01122AED289EDDB400B4A16A /* ToAMil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01122B12289EDDB500B4A16A /* Build configuration list for PBXNativeTarget "ToAMil" */;
+			buildPhases = (
+				01122AEA289EDDB400B4A16A /* Sources */,
+				01122AEB289EDDB400B4A16A /* Frameworks */,
+				01122AEC289EDDB400B4A16A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToAMil;
+			productName = ToAMil;
+			productReference = 01122AEE289EDDB400B4A16A /* ToAMil.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01122AFD289EDDB500B4A16A /* ToAMilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01122B15289EDDB500B4A16A /* Build configuration list for PBXNativeTarget "ToAMilTests" */;
+			buildPhases = (
+				01122AFA289EDDB500B4A16A /* Sources */,
+				01122AFB289EDDB500B4A16A /* Frameworks */,
+				01122AFC289EDDB500B4A16A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01122B00289EDDB500B4A16A /* PBXTargetDependency */,
+			);
+			name = ToAMilTests;
+			productName = ToAMilTests;
+			productReference = 01122AFE289EDDB500B4A16A /* ToAMilTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01122B07289EDDB500B4A16A /* ToAMilUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01122B18289EDDB500B4A16A /* Build configuration list for PBXNativeTarget "ToAMilUITests" */;
+			buildPhases = (
+				01122B04289EDDB500B4A16A /* Sources */,
+				01122B05289EDDB500B4A16A /* Frameworks */,
+				01122B06289EDDB500B4A16A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01122B0A289EDDB500B4A16A /* PBXTargetDependency */,
+			);
+			name = ToAMilUITests;
+			productName = ToAMilUITests;
+			productReference = 01122B08289EDDB500B4A16A /* ToAMilUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01122AE6289EDDB400B4A16A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					01122AED289EDDB400B4A16A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					01122AFD289EDDB500B4A16A = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 01122AED289EDDB400B4A16A;
+					};
+					01122B07289EDDB500B4A16A = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 01122AED289EDDB400B4A16A;
+					};
+				};
+			};
+			buildConfigurationList = 01122AE9289EDDB400B4A16A /* Build configuration list for PBXProject "ToAMil" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01122AE5289EDDB400B4A16A;
+			productRefGroup = 01122AEF289EDDB400B4A16A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01122AED289EDDB400B4A16A /* ToAMil */,
+				01122AFD289EDDB500B4A16A /* ToAMilTests */,
+				01122B07289EDDB500B4A16A /* ToAMilUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01122AEC289EDDB400B4A16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01122AF9289EDDB500B4A16A /* Preview Assets.xcassets in Resources */,
+				01122AF6289EDDB500B4A16A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01122AFC289EDDB500B4A16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01122B06289EDDB500B4A16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01122AEA289EDDB400B4A16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01122AF4289EDDB400B4A16A /* ContentView.swift in Sources */,
+				01122AF2289EDDB400B4A16A /* ToAMilApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01122AFA289EDDB500B4A16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01122B03289EDDB500B4A16A /* ToAMilTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01122B04289EDDB500B4A16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01122B0F289EDDB500B4A16A /* ToAMilUITestsLaunchTests.swift in Sources */,
+				01122B0D289EDDB500B4A16A /* ToAMilUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01122B00289EDDB500B4A16A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01122AED289EDDB400B4A16A /* ToAMil */;
+			targetProxy = 01122AFF289EDDB500B4A16A /* PBXContainerItemProxy */;
+		};
+		01122B0A289EDDB500B4A16A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01122AED289EDDB400B4A16A /* ToAMil */;
+			targetProxy = 01122B09289EDDB500B4A16A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01122B10289EDDB500B4A16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01122B11289EDDB500B4A16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01122B13289EDDB500B4A16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ToAMil/Preview Content\"";
+				DEVELOPMENT_TEAM = F67XPS3QQT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.ToAMil";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01122B14289EDDB500B4A16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ToAMil/Preview Content\"";
+				DEVELOPMENT_TEAM = F67XPS3QQT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.ToAMil";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01122B16289EDDB500B4A16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.ToAMilTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToAMil.app/ToAMil";
+			};
+			name = Debug;
+		};
+		01122B17289EDDB500B4A16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.ToAMilTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToAMil.app/ToAMil";
+			};
+			name = Release;
+		};
+		01122B19289EDDB500B4A16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.ToAMilUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ToAMil;
+			};
+			name = Debug;
+		};
+		01122B1A289EDDB500B4A16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.ToAMilUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ToAMil;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01122AE9289EDDB400B4A16A /* Build configuration list for PBXProject "ToAMil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01122B10289EDDB500B4A16A /* Debug */,
+				01122B11289EDDB500B4A16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01122B12289EDDB500B4A16A /* Build configuration list for PBXNativeTarget "ToAMil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01122B13289EDDB500B4A16A /* Debug */,
+				01122B14289EDDB500B4A16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01122B15289EDDB500B4A16A /* Build configuration list for PBXNativeTarget "ToAMilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01122B16289EDDB500B4A16A /* Debug */,
+				01122B17289EDDB500B4A16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01122B18289EDDB500B4A16A /* Build configuration list for PBXNativeTarget "ToAMilUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01122B19289EDDB500B4A16A /* Debug */,
+				01122B1A289EDDB500B4A16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01122AE6289EDDB400B4A16A /* Project object */;
+}
